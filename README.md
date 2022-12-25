@@ -117,8 +117,6 @@ After enabling {elasticsearch_connector and search_api modules}
   }
   ```
 
-
-
   * Spellcheck Fuzziness
   ```
   GET /elasticsearch_index_db_idx_product/_search
@@ -168,22 +166,17 @@ drupal + elasticsearch_connector
 
 ## RESOURCES
 
-  * ES with Drupal CMS [https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch]
+  * ES with Drupal CMS [!https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch]
   * https://www.youtube.com/watch?v=_h12KHPg_WE
-
   * https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/
   * https://medium.com/quantyca/reviving-an-e-commerce-search-engine-using-elasticsearch-e540751c6d99
   * https://www.youtube.com/watch?v=K-DWcM886Z4
-
   * https://www.youtube.com/watch?v=_h12KHPg_WE
   * https://www.youtube.com/watch?v=OoMZPU4EGrU
   * https://www.youtube.com/watch?v=FkxAfpvRrbc
-
   *  RANGE QUERIES
 https://linuxhint.com/elasticsearch-range-query/
-
   * SPELLCHECK FUZZINESS
   https://engineering.empathy.co/spellcheck-in-elasticsearch/
-
  * AUTOCOMPLETE
   https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/
