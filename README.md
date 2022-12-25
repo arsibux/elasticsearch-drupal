@@ -2,26 +2,26 @@
 elasticsearch with drupal 8
 
 
-TASK: Optimize the search Performance
+##TASK: Optimize the search Performance
 
 Currently the system is using drupal internal database search and providing custom rest API that fetching data from drupal linked database.
 
 Challenge: Implementation of All search related drupal exposed rReSTful APIs with elasticsearch service.
 
-SYSTEM SPECIFICATIONS:
+#SYSTEM SPECIFICATIONS:
 ** DRUPAL:8.9.13 as BACKEDN CMS Exposing ReSTful APIs.
 ** Mariadb: 10.4
 ** ANGULAR:        as FRONTEND Client.
 ** SEARCH: Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
 
-DEPENDENCIES:
+#DEPENDENCIES:
   * Elastissearch Service
   * Elasticseacrch Connector Drupal contrib module
   * Search API Drupal core module.
   * Views core module.
   * Webservices drupal core modules.
 
-** Elastic Search Setup can be achieved by following two ways.
+Elastic Search Setup can be achieved by following two ways.
 
     1. Setup Elasticsearch Server at seperate VM  or install. For connection b/w drupal and elasticsearch, drupal provides a contrib module {elasticsearch_connector} which establish connection. https://www.drupal.org/project/elasticsearch_connector
 
