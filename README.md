@@ -40,27 +40,52 @@ Challenge: Implementation of All search related drupal exposed rReSTful APIs wit
 After enabling {elasticsearch_connector and search_api modules}
 
 1. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
-
 2. Configur search_api with elasticsearch.
-
 3. Add index and configur datasource by selecting  entity and its fields for elasticsearch server.
-
 4.
 
+## KIbana Console Commands
+# List of indices in elasticsearch
+GET /_cat/indices?v
+
+# product idx
+`GET elasticsearch_index_db_idx_product/_search
+{
+  "query":{
+    "match_all": {
+    }
+  }
+}`
+
+# product idx
+`GET elasticsearch_index_db_idx_product/_search
+{
+  "query":{
+    "match": {
+      "status": false
+    }
+  }
+}`
+
+# Fulltext
+``
+# Spellcheck
+``
+# Range
+``
+# semantic
+``
 
 
-
-ES
-NASA SCIENCE
+#### NASA SCIENCE
 https://science.nasa.gov/
 drupal + elasticsearch_connector
-USGS STORE
+#### USGS STORE
 https://store.usgs.gov/
 
-
-
-
 ## RESOURCES
+
+https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch
 https://www.youtube.com/watch?v=_h12KHPg_WE
 
 https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/
