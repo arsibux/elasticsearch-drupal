@@ -73,7 +73,6 @@ After enabling {elasticsearch_connector and search_api modules}
 
   * Spellcheck
 
-
   * Range
   ```
   GET /elasticsearch_index_db_idx_product/_search
@@ -83,11 +82,11 @@ After enabling {elasticsearch_connector and search_api modules}
         "product_id": {
           "gte": 1000,
           "lte": 2000
-          }
         }
       }
     }
-    ```
+  }
+  ```
 
   * Semantic
 
