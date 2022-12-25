@@ -45,47 +45,48 @@ After enabling {elasticsearch_connector and search_api modules}
 4.
 
 ## KIbana Console Commands
-# List of indices in elasticsearch
+
+#### List of indices in elasticsearch
 GET /_cat/indices?v
 
-# product idx
-`GET elasticsearch_index_db_idx_product/_search
+#### get all doc product idx
+``` GET elasticsearch_index_db_idx_product/_search
 {
   "query":{
     "match_all": {
     }
   }
-}`
+} ```
 
-# product idx
-`GET /elasticsearch_index_db_idx_product/_search
+#### get all indices in elasticsearch
+``` GET /elasticsearch_index_db_idx_product/_search
 {
   "query":{
     "match": {
       "status": false
     }
   }
-}`
+} ```
 
-# Fulltext
-``
-# Spellcheck
-``
-# Range
-`GET /elasticsearch_index_db_idx_product/_search
-  {
-    "query": {
+#### Fulltext
+
+#### Spellcheck
+
+#### Range
+```GET /elasticsearch_index_db_idx_product/_search
+{
+  "query": {
     "range": {
-    "product_id": {
-    "gte": 1000,
-    "lte": 2000
-      }
+      "product_id": {
+        "gte": 1000,
+        "lte": 2000
         }
       }
+    }
   }`
 
 # semantic
-``
+
 
 
 #### NASA SCIENCE
