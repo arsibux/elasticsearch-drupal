@@ -1,16 +1,16 @@
 # Elasticearch-drupal
-elasticsearch with drupal 8
-
-## SEARCH PERFORMANCE OPTIMIZATION
-
-Currently the system is using drupal internal database search and providing custom rest API that fetching data from drupal linked database.
-Challenge: Implementation of All search related drupal exposed rReSTful APIs with elasticsearch service.
+elasticsearch integration with Drupal 8 using core module SEARCH API and features contrib modules Elasticsearch  Connector.
 
 ## SYSTEM SPECIFICATIONS
   * DRUPAL:8.9.13 as BACKEDN CMS Exposing ReSTful APIs.
   * Mariadb: 10.4
   * ANGULAR: as FRONTEND Client.
   * SEARCH: Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
+
+## SEARCH PERFORMANCE OPTIMIZATION
+
+Currently the system is using drupal internal database search and providing custom rest API that fetching data from drupal linked database.
+Challenge: Implementation of All search related drupal exposed rReSTful APIs with elasticsearch service.
 
 ## DEPENDENCIES
   * Elastissearch Service
@@ -71,7 +71,73 @@ After enabling {elasticsearch_connector and search_api modules}
 
   * Fulltext
 
-  * Spellcheck
+  * Autocomplete
+  ```
+  GET /elasticsearch_index_db_idx_product/_search
+  {
+      "query": {
+          "match": {
+              "title": {
+                  "query": "raider "
+              }
+          }
+      }
+  }
+  ```
+
+
+  * Setting for search as you type
+  ```
+  PUT elasticsearch_index_db_idx_product
+  {
+    "mappings": {
+      "properties": {
+        "title": {
+          "type": "search_as_you_type"
+        }
+      }
+    }
+  }
+  ```
+  * Search
+  ```
+  GET elasticsearch_index_db_idx_product/_search
+  {
+    "query": {
+      "multi_match": {
+        "query": "reider ",
+        "type": "bool_prefix",
+        "fields": [
+          "title",
+          "title._2gram",
+          "title._3gram"
+        ]
+      }
+    }
+  }
+  ```
+
+
+
+  * Spellcheck Fuzziness
+  ```
+  GET /elasticsearch_index_db_idx_product/_search
+    {
+    "suggest": {
+      "text": "reid",
+      "spellcheck-term": {
+        "term": {
+          "field": "title"
+        }
+      },
+      "spellcheck-phrase": {
+        "phrase": {
+          "field": "title"
+        }
+      }
+    }
+  }
+  ```
 
   * Range
   ```
