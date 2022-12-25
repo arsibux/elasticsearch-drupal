@@ -58,7 +58,7 @@ GET /_cat/indices?v
 }`
 
 # product idx
-`GET elasticsearch_index_db_idx_product/_search
+`GET /elasticsearch_index_db_idx_product/_search
 {
   "query":{
     "match": {
@@ -72,7 +72,18 @@ GET /_cat/indices?v
 # Spellcheck
 ``
 # Range
-``
+`GET /elasticsearch_index_db_idx_product/_search
+  {
+    "query": {
+    "range": {
+    "product_id": {
+    "gte": 1000,
+    "lte": 2000
+      }
+        }
+      }
+  }`
+
 # semantic
 ``
 
