@@ -46,34 +46,34 @@ After enabling {elasticsearch_connector and search_api modules}
 
 ## KIbana Console Commands
 
-#### List of indices in elasticsearch
-GET /_cat/indices?v
+*** List of indices in elasticsearch ***
+`GET /_cat/indices?v`
 
-#### get all doc product idx
-``` GET elasticsearch_index_db_idx_product/_search
+*** Get all doc product idx ***
+``GET elasticsearch_index_db_idx_product/_search
 {
   "query":{
     "match_all": {
     }
   }
-} ```
+}``
 
-#### get all indices in elasticsearch
-``` GET /elasticsearch_index_db_idx_product/_search
+*** Get all indices in elasticsearch ***
+``GET /elasticsearch_index_db_idx_product/_search
 {
   "query":{
     "match": {
       "status": false
     }
   }
-} ```
+} ``
 
-#### Fulltext
+*** Fulltext ***
 
-#### Spellcheck
+*** Spellcheck ***
 
-#### Range
-```GET /elasticsearch_index_db_idx_product/_search
+*** Range ***
+``GET /elasticsearch_index_db_idx_product/_search
 {
   "query": {
     "range": {
@@ -83,15 +83,16 @@ GET /_cat/indices?v
         }
       }
     }
-  }`
+  }``
 
-# semantic
+*** Semantic ***
 
 
 
 #### NASA SCIENCE
 https://science.nasa.gov/
 drupal + elasticsearch_connector
+
 #### USGS STORE
 https://store.usgs.gov/
 
