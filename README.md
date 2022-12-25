@@ -50,30 +50,36 @@ After enabling {elasticsearch_connector and search_api modules}
 `GET /_cat/indices?v`
 
 *** Get all doc product idx ***
-``GET elasticsearch_index_db_idx_product/_search
+```
+GET elasticsearch_index_db_idx_product/_search
 {
   "query":{
     "match_all": {
     }
   }
-}``
+}
+```
 
 *** Get all indices in elasticsearch ***
-``GET /elasticsearch_index_db_idx_product/_search
+```
+GET /elasticsearch_index_db_idx_product/_search
 {
   "query":{
     "match": {
       "status": false
     }
   }
-} ``
+}
+```
 
 *** Fulltext ***
 
 *** Spellcheck ***
 
+
 *** Range ***
-``GET /elasticsearch_index_db_idx_product/_search
+```
+GET /elasticsearch_index_db_idx_product/_search
 {
   "query": {
     "range": {
@@ -83,7 +89,8 @@ After enabling {elasticsearch_connector and search_api modules}
         }
       }
     }
-  }``
+  }
+  ```
 
 *** Semantic ***
 
