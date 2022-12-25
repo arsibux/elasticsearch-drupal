@@ -154,29 +154,25 @@ After enabling {elasticsearch_connector and search_api modules}
 
   * Semantic
 
-
 ## EXAMPLES
 
 #### NASA SCIENCE
   https://science.nasa.gov/
-drupal + elasticsearch_connector
+  drupal + elasticsearch_connector
 
 #### USGS STORE
   https://store.usgs.gov/
 
 ## RESOURCES
 
-  * ES with Drupal CMS [!https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch]
-  * https://www.youtube.com/watch?v=_h12KHPg_WE
-  * https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/
-  * https://medium.com/quantyca/reviving-an-e-commerce-search-engine-using-elasticsearch-e540751c6d99
-  * https://www.youtube.com/watch?v=K-DWcM886Z4
-  * https://www.youtube.com/watch?v=_h12KHPg_WE
-  * https://www.youtube.com/watch?v=OoMZPU4EGrU
-  * https://www.youtube.com/watch?v=FkxAfpvRrbc
-  *  RANGE QUERIES
-https://linuxhint.com/elasticsearch-range-query/
-  * SPELLCHECK FUZZINESS
-  https://engineering.empathy.co/spellcheck-in-elasticsearch/
- * AUTOCOMPLETE
-  https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/
+  * [ES with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
+  * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
+  * [Video](https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/)
+  * [Video](https://medium.com/quantyca/reviving-an-e-commerce-search-engine-using-elasticsearch-)
+  * [Video](https://www.youtube.com/watch?v=K-DWcM886Z4)
+  * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
+  * [Video](https://www.youtube.com/watch?v=OoMZPU4EGrU)
+  * [Video](https://www.youtube.com/watch?v=FkxAfpvRrbc)
+  *  [RANGE QUERIES](https://linuxhint.com/elasticsearch-range-query/)
+  * [SPELLCHECK FUZZINESS](https://engineering.empathy.co/spellcheck-in-elasticsearch/)
+ * [AUTOCOMPLETE](https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/)
