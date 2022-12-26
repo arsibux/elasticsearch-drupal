@@ -14,7 +14,7 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
   * ANGULAR: as FRONTEND Client.
   * SEARCH: Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
 
-## METHOD 1 { Drupal Modules }
+## METHOD 1 {Using core and contrib Drupal modules }
 
   ### DEPENDENCIES
 
@@ -40,142 +40,141 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
     Note:This project is not covered by Drupal’s security advisory policy.
     but 353 sites report using this module sites report using this module.
 
-After enabling {elasticsearch_connector and search_api modules}
+  After enabling {elasticsearch_connector and search_api modules}
 
-### DRUPAL MODULES INSTALLATION AND CONFIGURATION
+  ### DRUPAL MODULES INSTALLATION AND CONFIGURATION
 
-  1. Search API enable and elasticearch_connector downlaod via composer and enabled
-  2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
-  3. Configur search_api with elasticsearch.
-  4. Creating index {idx_product} product in Search API.
-  5. Configur datasource by selecting  entity {PRODUCT} and its fields for elasticsearch server.
-  6. Create View {Rest Export Page with path} and select index as content.
+    1. Search API enable and elasticearch_connector downlaod via composer and enabled
+    2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
+    3. Configur search_api with elasticsearch.
+    4. Creating index {idx_product} product in Search API.
+    5. Configur datasource by selecting  entity {PRODUCT} and its fields for elasticsearch server.
+    6. Create View {Rest Export Page with path} and select index as content.
+
 
 ## METHOD 2 { Custom Development }
 
-### KIBANA SEARCHING COMMANDS
+  ### NEW MODULE {zain_elasticsearch}
 
-  * List of Indices in elasticsearch
+  ### SEARCHING APIs IN KIBANA
 
-  `GET /_cat/indices?v`
+    * List of Indices in elasticsearch
 
-  * Get all doc product idx
-  ```
-  GET elasticsearch_index_db_idx_product/_search
-  {
-    "query":{
-      "match_all": {
-      }
-    }
-  }
-  ```
+    `GET /_cat/indices?v`
 
-  * Get all indices in elasticsearch ***
-  ```
-  GET /elasticsearch_index_db_idx_product/_search
-  {
-    "query":{
-      "match": {
-        "status": false
-      }
-    }
-  }
-  ```
-
-  * Fulltext
-
-  * Autocomplete
-  ```
-  GET /elasticsearch_index_db_idx_product/_search
-  {
-      "query": {
-          "match": {
-              "title": {
-                  "query": "raider "
-              }
-          }
-      }
-  }
-  ```
-
-  * Setting for search as you type
-  ```
-  PUT elasticsearch_index_db_idx_product
-  {
-    "mappings": {
-      "properties": {
-        "title": {
-          "type": "search_as_you_type"
-        }
-      }
-    }
-  }
-  ```
-  * Search
-  ```
-  GET elasticsearch_index_db_idx_product/_search
-  {
-    "query": {
-      "multi_match": {
-        "query": "reider ",
-        "type": "bool_prefix",
-        "fields": [
-          "title",
-          "title._2gram",
-          "title._3gram"
-        ]
-      }
-    }
-  }
-  ```
-
-  * Spellcheck Fuzziness
-  ```
-  GET /elasticsearch_index_db_idx_product/_search
+    * Get all doc product idx
+    ```
+    GET elasticsearch_index_db_idx_product/_search
     {
-    "suggest": {
-      "text": "reid",
-      "spellcheck-term": {
-        "term": {
-          "field": "title"
-        }
-      },
-      "spellcheck-phrase": {
-        "phrase": {
-          "field": "title"
+      "query":{
+        "match_all": {
         }
       }
     }
-  }
-  ```
+    ```
 
-  * Range
-  ```
-  GET /elasticsearch_index_db_idx_product/_search
-  {
-    "query": {
-      "range": {
-        "product_id": {
-          "gte": 1000,
-          "lte": 2000
+    * Get all indices in elasticsearch ***
+    ```
+    GET /elasticsearch_index_db_idx_product/_search
+    {
+      "query":{
+        "match": {
+          "status": false
         }
       }
     }
-  }
-  ```
+    ```
 
-  * Semantic
+    * Fulltext
 
-### EXAMPLES
+    * Autocomplete
+    ```
+    GET /elasticsearch_index_db_idx_product/_search
+    {
+        "query": {
+            "match": {
+                "title": {
+                    "query": "raider "
+                }
+            }
+        }
+    }
+    ```
 
-##### NASA SCIENCE
-  https://science.nasa.gov/
-  drupal + elasticsearch_connector
+    * Setting for search as you type
+    ```
+    PUT elasticsearch_index_db_idx_product
+    {
+      "mappings": {
+        "properties": {
+          "title": {
+            "type": "search_as_you_type"
+          }
+        }
+      }
+    }
+    ```
+    * Search
+    ```
+    GET elasticsearch_index_db_idx_product/_search
+    {
+      "query": {
+        "multi_match": {
+          "query": "reider ",
+          "type": "bool_prefix",
+          "fields": [
+            "title",
+            "title._2gram",
+            "title._3gram"
+          ]
+        }
+      }
+    }
+    ```
 
-##### USGS STORE
-  https://store.usgs.gov/
+    * Spellcheck Fuzziness
+    ```
+    GET /elasticsearch_index_db_idx_product/_search
+      {
+      "suggest": {
+        "text": "reid",
+        "spellcheck-term": {
+          "term": {
+            "field": "title"
+          }
+        },
+        "spellcheck-phrase": {
+          "phrase": {
+            "field": "title"
+          }
+        }
+      }
+    }
+    ```
 
-### REFERENCES
+    * Range
+    ```
+    GET /elasticsearch_index_db_idx_product/_search
+    {
+      "query": {
+        "range": {
+          "product_id": {
+            "gte": 1000,
+            "lte": 2000
+          }
+        }
+      }
+    }
+    ```
+
+    * Semantic
+
+  ### EXAMPLES
+
+  * [NASA SCIENCE](https://science.nasa.gov/) Drupal + Elasticsearch
+  * [USGS STORE](https://store.usgs.gov/)
+
+## REFERENCES
 
   * [ES integration with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
   <!-- * [Video](https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/)
