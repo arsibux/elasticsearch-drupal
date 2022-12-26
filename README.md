@@ -54,15 +54,14 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
 
 ## METHOD 2 { Custom Development }
 
-  ### NEW MODULE {zain_elasticsearch}
+  ### NEW MODULE { zain_elasticsearch }
 
   ### SEARCHING APIs IN KIBANA
 
-    * List of Indices in elasticsearch
-
+  * List of Indices in elasticsearch
     `GET /_cat/indices?v`
 
-    * Get all doc product idx
+  * Get all doc product idx
     ```
     GET elasticsearch_index_db_idx_product/_search
     {
@@ -85,90 +84,6 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
     }
     ```
 
-    * Fulltext
-
-    * Autocomplete
-    ```
-    GET /elasticsearch_index_db_idx_product/_search
-    {
-        "query": {
-            "match": {
-                "title": {
-                    "query": "raider "
-                }
-            }
-        }
-    }
-    ```
-
-    * Setting for search as you type
-    ```
-    PUT elasticsearch_index_db_idx_product
-    {
-      "mappings": {
-        "properties": {
-          "title": {
-            "type": "search_as_you_type"
-          }
-        }
-      }
-    }
-    ```
-    * Search
-    ```
-    GET elasticsearch_index_db_idx_product/_search
-    {
-      "query": {
-        "multi_match": {
-          "query": "reider ",
-          "type": "bool_prefix",
-          "fields": [
-            "title",
-            "title._2gram",
-            "title._3gram"
-          ]
-        }
-      }
-    }
-    ```
-
-    * Spellcheck Fuzziness
-    ```
-    GET /elasticsearch_index_db_idx_product/_search
-      {
-      "suggest": {
-        "text": "reid",
-        "spellcheck-term": {
-          "term": {
-            "field": "title"
-          }
-        },
-        "spellcheck-phrase": {
-          "phrase": {
-            "field": "title"
-          }
-        }
-      }
-    }
-    ```
-
-    * Range
-    ```
-    GET /elasticsearch_index_db_idx_product/_search
-    {
-      "query": {
-        "range": {
-          "product_id": {
-            "gte": 1000,
-            "lte": 2000
-          }
-        }
-      }
-    }
-    ```
-
-    * Semantic
-
   ### EXAMPLES
 
   * [NASA SCIENCE](https://science.nasa.gov/) Drupal + Elasticsearch
@@ -184,6 +99,6 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
   * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
   * [Video](https://www.youtube.com/watch?v=OoMZPU4EGrU)
   * [Video](https://www.youtube.com/watch?v=FkxAfpvRrbc) -->
-  *  [ELASTICSEARCH RANGE QUERIES](https://linuxhint.com/elasticsearch-range-query/)
+  * [ELASTICSEARCH RANGE QUERIES](https://linuxhint.com/elasticsearch-range-query/)
   * [SPELLCHECK FUZZINESS](https://engineering.empathy.co/spellcheck-in-elasticsearch/)
- * [ELASTICSEARCH AUTOCOMPLETE](https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/)
+  * [ELASTICSEARCH AUTOCOMPLETE](https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/)
