@@ -72,7 +72,7 @@ GET elasticsearch_index_db_idx_product/_search
 }
 ```
 
-Get all indices in elasticsearch
+- Get all indices in elasticsearch
 
 ```
 GET /elasticsearch_index_db_idx_product/\_search
