@@ -164,8 +164,12 @@ GET /elasticsearch_index_db_idx_product/_search
 
 - [NASA SCIENCE](https://science.nasa.gov/) Drupal + Elasticsearch
 - [USGS STORE](https://store.usgs.gov/)
+
 ## WORK LOGS
-  - 19-DEC-2022 - 26-DE-2022 []
+
+- [ADDED: 19-DEC-2022 - 26-DE-2022](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/19_DEC_TO_26_DEC.md)
+- [ADDED: 19-DEC-2022 - 26-DE-2022]
+
 ## REFERENCES
 
 - [ES Integration with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
