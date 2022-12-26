@@ -168,7 +168,7 @@ GET /elasticsearch_index_db_idx_product/_search
 ## REFERENCES
 
 - [ES Integration with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
-<!-- * [Video](https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/)
+<!-- -[Video](https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/)
 - [Video](https://medium.com/quantyca/reviving-an-e-commerce-search-engine-using-elasticsearch-)
 - [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
 - [Video](https://www.youtube.com/watch?v=K-DWcM886Z4)
