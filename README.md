@@ -176,7 +176,7 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
 
 ## REFERENCES
 
-  * [ES integration with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
+  * [ES Integration with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
   <!-- * [Video](https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/)
   * [Video](https://medium.com/quantyca/reviving-an-e-commerce-search-engine-using-elasticsearch-)
   * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
@@ -184,7 +184,6 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
   * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
   * [Video](https://www.youtube.com/watch?v=OoMZPU4EGrU)
   * [Video](https://www.youtube.com/watch?v=FkxAfpvRrbc) -->
-
-  *  [RANGE QUERIES](https://linuxhint.com/elasticsearch-range-query/)
+  *  [ELASTICSEARCH RANGE QUERIES](https://linuxhint.com/elasticsearch-range-query/)
   * [SPELLCHECK FUZZINESS](https://engineering.empathy.co/spellcheck-in-elasticsearch/)
- * [AUTOCOMPLETE](https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/)
+ * [ELASTICSEARCH AUTOCOMPLETE](https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/)
