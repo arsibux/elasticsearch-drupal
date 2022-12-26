@@ -1,49 +1,62 @@
-# Elasticearch-drupal
-elasticsearch integration with Drupal 8 using core module SEARCH API and features contrib modules Elasticsearch  Connector.
+# Elastiscearch Drupal 8
 
-## SYSTEM SPECIFICATIONS
+Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and features contrib modules Elasticsearch  Connector.
+
+### SEARCH PERFORMANCE OPTIMIZATION
+
+  Currently the system is using drupal internal database search and providing custom rest API that fetching data from drupal linked database.
+  Challenge: Implementation of All search related drupal exposed rReSTful APIs with elasticsearch service.
+
+### SYSTEM SPECIFICATIONS
+
   * DRUPAL:8.9.13 as BACKEDN CMS Exposing ReSTful APIs.
   * Mariadb: 10.4
   * ANGULAR: as FRONTEND Client.
   * SEARCH: Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
 
-## SEARCH PERFORMANCE OPTIMIZATION
+## METHOD 1 { Drupal Modules }
 
-Currently the system is using drupal internal database search and providing custom rest API that fetching data from drupal linked database.
-Challenge: Implementation of All search related drupal exposed rReSTful APIs with elasticsearch service.
+  ### DEPENDENCIES
 
-## DEPENDENCIES
-  * Elastissearch Service
-  * Elasticseacrch Connector Drupal contrib module
-  * Search API Drupal core module.
-  * Views core module.
-  * Webservices drupal core modules.
+    * Elastissearch Service
+    * Elasticseacrch Connector Drupal contrib module
+    * Search API Drupal core module.
+    * Views core module.
+    * Webservices drupal core modules.
 
-Elastic Search Setup can be achieved by following two ways.
+  ### ES INTEGRATION WITH D8 CMS
 
-  1. Setup Elasticsearch Server at seperate VM  or install. For connection b/w  drupal and elasticsearch, drupal provides a contrib module {elasticsearch_connector} which establish connection. https://www.drupal.org/project/elasticsearch_connector
+  Elastic Search Setup can be achieved by following two ways.
+    1. Setup Elasticsearch Server at seperate VM  or install. For connection b/w  drupal and elasticsearch, drupal provides a contrib module {elasticsearch_connector} which establish connection. https://www.drupal.org/project/elasticsearch_connector
 
-  Note:This project is not covered by Drupal’s security advisory policy.
-  but 5,161 sites report using this module
+    Note:This project is not covered by Drupal’s security advisory policy.
+    but 5,161 sites report using this module
 
-  2. Cloud based Service
-    * elastic.co[https://www.elastic.co/cloud/]
-    * AWS (https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
-      for connection https://www.drupal.org/project/elasticsearch_aws_connector.
+    2. Cloud based Service
+      * elastic.co[https://www.elastic.co/cloud/]
+      * AWS (https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
+        for connection https://www.drupal.org/project/elasticsearch_aws_connector.
 
-  Note:This project is not covered by Drupal’s security advisory policy.
-  but 353 sites report using this module sites report using this module.
+    Note:This project is not covered by Drupal’s security advisory policy.
+    but 353 sites report using this module sites report using this module.
 
 After enabling {elasticsearch_connector and search_api modules}
-## SETUP
-  1. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
-  2. Configur search_api with elasticsearch.
-  3. Add index and configur datasource by selecting  entity and its fields for elasticsearch server.
-  4.
 
-## KIbana Console Commands
+### DRUPAL MODULES INSTALLATION AND CONFIGURATION
 
-  * List of indices in elasticsearch
+  1. Search API enable and elasticearch_connector downlaod via composer and enabled
+  2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
+  3. Configur search_api with elasticsearch.
+  4. Creating index {idx_product} product in Search API.
+  5. Configur datasource by selecting  entity {PRODUCT} and its fields for elasticsearch server.
+  6. Create View {Rest Export Page with path} and select index as content.
+
+## METHOD 2 { Custom Development }
+
+### KIBANA SEARCHING COMMANDS
+
+  * List of Indices in elasticsearch
+
   `GET /_cat/indices?v`
 
   * Get all doc product idx
@@ -84,7 +97,6 @@ After enabling {elasticsearch_connector and search_api modules}
       }
   }
   ```
-
 
   * Setting for search as you type
   ```
@@ -154,25 +166,26 @@ After enabling {elasticsearch_connector and search_api modules}
 
   * Semantic
 
-## EXAMPLES
+### EXAMPLES
 
-#### NASA SCIENCE
+##### NASA SCIENCE
   https://science.nasa.gov/
   drupal + elasticsearch_connector
 
-#### USGS STORE
+##### USGS STORE
   https://store.usgs.gov/
 
-## RESOURCES
+### REFERENCES
 
   * [ES with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
-  * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
   * [Video](https://opendistro.github.io/for-elasticsearch-docs/docs/elasticsearch/ux/)
   * [Video](https://medium.com/quantyca/reviving-an-e-commerce-search-engine-using-elasticsearch-)
+  * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
   * [Video](https://www.youtube.com/watch?v=K-DWcM886Z4)
   * [Video](https://www.youtube.com/watch?v=_h12KHPg_WE)
   * [Video](https://www.youtube.com/watch?v=OoMZPU4EGrU)
   * [Video](https://www.youtube.com/watch?v=FkxAfpvRrbc)
+
   *  [RANGE QUERIES](https://linuxhint.com/elasticsearch-range-query/)
   * [SPELLCHECK FUZZINESS](https://engineering.empathy.co/spellcheck-in-elasticsearch/)
  * [AUTOCOMPLETE](https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/)
