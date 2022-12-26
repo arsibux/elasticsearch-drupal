@@ -28,19 +28,24 @@ Challenge: Implementation of All search related drupal exposed rReSTful APIs wit
 
 Elastic Search Setup can be achieved by following two ways.
 
-1. Setup Elasticsearch Server at seperate VM or install. For connection b/w drupal and elasticsearch, drupal provides a contrib module {elasticsearch_connector} which establish connection. https://www.drupal.org/project/elasticsearch_connector
+1. Setup Elasticsearch Server @VM
+
+For connection b/w drupal and elasticsearch, drupal provides a contrib module [**elasticsearch_connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
 
 Note:This project is not covered by Drupal’s security advisory policy.
-but 5,161 sites report using this module
+but **5,161** sites report using this module
+
+- [**SECURITY**]()
+- [**LIENCENE**]()
 
 2. Cloud based Service
 
-- elastic.co[https://www.elastic.co/cloud/]
-- AWS (https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
-  for connection https://www.drupal.org/project/elasticsearch_aws_connector.
+- [elastic.co](https://www.elastic.co/cloud/)
+- [AWS](https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
+  [For Connection contrib module](https://www.drupal.org/project/elasticsearch_aws_connector).
 
 Note:This project is not covered by Drupal’s security advisory policy.
-but 353 sites report using this module sites report using this module.
+but **353** sites report using this module sites report using this module.
 
 ### DRUPAL MODULES INSTALLATION AND CONFIGURATION
 
