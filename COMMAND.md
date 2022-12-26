@@ -1,3 +1,48 @@
+- List of Indices in elasticsearch
+  `GET /_cat/indices?v`
+
+- Get all doc product idx
+
+```
+GET elasticsearch_index_db_idx_product/_search
+{
+  "query":{
+    "match_all": {
+    }
+  }
+}
+```
+
+- Get all indices in elasticsearch
+
+```
+GET /elasticsearch_index_db_idx_product/\_search
+{
+  "query":{
+    "match": {
+    "status": false
+    }
+  }
+}
+
+```
+
+- Fulltext
+  Fulltext in one field not all fields
+
+```
+GET elasticsearch_index_db_idx_product/_search
+{
+  "query": {
+    "match": {
+      "title": {
+        "query": "Sim"
+      }
+    }
+  }
+}
+```
+
 - Setting for search as you type
 
 ```
@@ -70,4 +115,3 @@ GET /elasticsearch_index_db_idx_product/_search
 ```
 
 - Semantic
-- Fulltext

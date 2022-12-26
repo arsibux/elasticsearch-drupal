@@ -55,7 +55,7 @@ but 353 sites report using this module sites report using this module.
 
 ### NEW MODULE { zain_elasticsearch }
 
-### SEARCHING APIs IN KIBANA
+### SEARCHING APIs IN KIBANAٖ
 
 - List of Indices in elasticsearch
   `GET /_cat/indices?v`
