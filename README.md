@@ -167,8 +167,8 @@ GET /elasticsearch_index_db_idx_product/_search
 
 ## WORK LOGS
 
-- [ADDED: 19-DEC-2022 - 26-DE-2022](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/19_DEC_TO_26_DEC.md)
-- [ADDED: 19-DEC-2022 - 26-DE-2022]
+- [ADDED: 19-DEC-2022 - 26-DEC-2022](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/26_DEC_TO_02_JAN.md)
+- [ADDED: 26-DEC-2022 - 02-JAN-2023]
 
 ## REFERENCES
 
