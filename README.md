@@ -164,7 +164,8 @@ GET /elasticsearch_index_db_idx_product/_search
 
 - [NASA SCIENCE](https://science.nasa.gov/) Drupal + Elasticsearch
 - [USGS STORE](https://store.usgs.gov/)
-
+## WORK LOGS
+  - 19-DEC-2022 - 26-DE-2022 []
 ## REFERENCES
 
 - [ES Integration with Drupal CMS](https://www.lullabot.com/articles/indexing-content-from-drupal-8-to-elasticsearch)
@@ -178,7 +179,3 @@ GET /elasticsearch_index_db_idx_product/_search
 - [ELASTICSEARCH RANGE QUERIES](https://linuxhint.com/elasticsearch-range-query/)
 - [SPELLCHECK FUZZINESS](https://engineering.empathy.co/spellcheck-in-elasticsearch/)
 - [ELASTICSEARCH AUTOCOMPLETE](https://opster.com/guides/elasticsearch/how-tos/elasticsearch-auto-complete-guide/)
-
-```
-
-```
