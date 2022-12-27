@@ -71,11 +71,19 @@ but **353** sites report using this module sites report using this module.
 **TESTING**
 
 - Web Stack with Elasticsearch Server and Kibana up and running
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/stack.png)
 - Total products in drupal CMS DATABASE. **{ 489 }** with both status {published, not}
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/db.png)
 - Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
+  - Before ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/before.png)
+  - After ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/after.png)
+- Check APS in Postman
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
 - Check total number of the products in ReStful API.
   - without keyword
+    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/total.png)
   - with keyword
+    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/filter.png)
 
 <hr>
 
