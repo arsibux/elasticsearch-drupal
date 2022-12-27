@@ -12,20 +12,21 @@ Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and fea
 - DATABASE: Mariadb: 10.4
 - ANGULAR: FRONTEND Client.
 
-**NOTE**: Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
-
-We have two solutions to integrate search engin with drupal CMS
+We have two solutions to integrate Elasticsearch Server with Drupal CMS
 
 - SOLUTION # 1 { Core and Contrib Drupal Modules }
 - SOLUTION # 2 { Drupal Custom Module Development }
 
 ## SOLUTION # 1 { Using Core and Contrib Drupal Modules }
 
-In this method we can use drupal contrib modules to integrate elasticsearch with drupal cms/
+Drupal contrib modules to integrate Elasticsearch with Drupal CMS.
 
 **DEPENDENCIES**
 
 - [Elastissearch Service](https://www.elastic.co/)
+
+  - [Free and Open](https://www.elastic.co/about/free-and-open)
+
 - [Elasticseacrch Connector](https://www.drupal.org/project/elasticsearch_connector) Drupal Contrib Module.
 - [Search API](https://www.drupal.org/project/drupal/releases/8.9.13) Drupal Core Module.
 - [Views](https://www.drupal.org/project/drupal/releases/8.9.13) Core Module.
@@ -35,38 +36,36 @@ In this method we can use drupal contrib modules to integrate elasticsearch with
 
 **ES INTEGRATION WITH D8 CMS**
 
-Elastic Search Setup can be achieved by following two ways.
+Elasticsearch Setup can be achieved by following two ways.
 
 - Setup Elasticsearch Server @VM
-
-  For connection b/w drupal and elasticsearch, drupal provides a contrib module [**Elasticsearch Connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
-
-  Note:This project is not covered by Drupal’s security advisory policy.
-  but **{ 5,161 }** sites report using this module
-
-  - [**SECURITY**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/SECURITY.md)
-  - [**LIENCENE**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/LICENSE.md)
-
-- Cloud based Service
-
+- Cloud based services
   - [elastic.co](https://www.elastic.co/cloud/)
   - [AWS](https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
-    [For Connection contrib module](https://www.drupal.org/project/elasticsearch_aws_connector).
 
-  Note:This project is not covered by Drupal’s security advisory policy.
-  but **{ 353 }** sites report using this module sites report using this module.
+For connection b/w Drupal and Elasticsearch, Drupal provides a contrib module [**Elasticsearch Connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
+
+Note:This project is not covered by Drupal’s security advisory policy.
+but **{ 5,161 }** sites report using this module
+
+- Last **RELEASE**
+
+- [**SECURITY**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/SECURITY.md)
+
+- **LICENSE** GNU GENERAL PUBLIC LICENSE Version 2, June 1991
+
 
 **DRUPAL MODULES INSTALLATION AND CONFIGURATION**
 
-1. Search API enable and elasticearch_connector downlaod via composer and enabled.
+1. Search API and Elasticearch Connector enabled.
 
 ![modules](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es_enabled.png)
 
-2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
+2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo Elasticearch Connector.
 
 ![es](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es.png)
 
-3. Configur search_api with elasticsearch.
+3. Configur Search API and Elasticearch Connector.
 
 ![search_api](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/search_api.png)
 
@@ -125,11 +124,6 @@ Elastic Search Setup can be achieved by following two ways.
 ### KIBANA
 
 - [Searching APIs in Kibana](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md)
-
-### EXAMPLES
-
-- [NASA SCIENCE](https://science.nasa.gov/) Drupal + Elasticsearch
-- [USGS STORE](https://store.usgs.gov/)
 
 ### WORK LOGS
 
