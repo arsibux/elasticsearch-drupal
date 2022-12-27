@@ -2,13 +2,9 @@
 
 Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and features contrib modules Elasticsearch Connector.
 
-**TASK** --SEARCH PERFORMANCE OPTIMIZATION --
+**TASK** Optimize search related ReSTful APIs using external Search Engine. Currently the system is using drupal internal database search and providing custom ReST API that fetching data from drupal linked database.
 
-Optimize search related ReSTful APIs using external search engin. Currently the system is using drupal internal database search and providing custom ReST API that fetching data from drupal linked database.
-
-**Challenge**: Integration of all search related drupal exposed ReSTful APIs with elasticsearch service.
-
-### SYSTEM SPECIFICATIONS
+**SYSTEM SPECIFICATIONS**
 
 - [DRUPAL: 8.9.13](https://www.drupal.org/project/drupal/releases/8.9.13) CMS as BACKEND
   - [Commerce: 8.x-2.15](https://www.drupal.org/project/commerce/releases/8.x-2.15)
@@ -90,33 +86,33 @@ Elastic Search Setup can be achieved by following two ways.
 
 1. Web Stack with Elasticsearch Server and Kibana up and running
 
-  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/stack.png)
+![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/stack.png)
 
 2. Total products in drupal CMS DATABASE. **{ 489 }** with both status {published, not}
 
-  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/db.png)
+![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/db.png)
 
 3. Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
 
-  - Before
-    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/before.png)
+- Before
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/before.png)
 
-  - After
-    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/after.png)
+- After
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/after.png)
 
 4. Check API in Postman
 
-  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
+![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
 
 5. Check total number of the products in ReStful API.
 
-  - without keyword
+- without keyword
 
-    ![total](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/total.png)
+  ![total](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/total.png)
 
-  - with keyword
+- with keyword
 
-    ![filtered](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/filtered.png)
+  ![filtered](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/filtered.png)
 
 <hr>
 
