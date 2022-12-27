@@ -60,37 +60,37 @@ Elastic Search Setup can be achieved by following two ways.
 
 1. Search API enable and elasticearch_connector downlaod via composer and enabled.
 
-![modules](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es_enabled.png)
+  ![modules](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es_enabled.png)
 
 2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
 
-   ![es](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es.png)
+  ![es](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es.png)
 
 3. Configur search_api with elasticsearch.
 
-   ![search_api](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/search_api.png)
+  ![search_api](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/search_api.png)
 
 4. Creating index {idx_product} product in Search API.
 
-   ![idx](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/idx.png)
+  ![idx](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/idx.png)
 
 5. Configur datasource by selecting entity {PRODUCT} and its fields for elasticsearch server.
 
-   ![fields](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/idx.png)
+  ![fields](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/idx.png)
 
 6. Create View {Rest Export Page with path} and select index as content.
 
-   ![views](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/view.png)
+  ![views](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/view.png)
 
 **TESTING**
 
 1. Web Stack with Elasticsearch Server and Kibana up and running
 
-![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/stack.png)
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/stack.png)
 
 2. Total products in drupal CMS DATABASE. **{ 489 }** with both status {published, not}
 
-![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/db.png)
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/db.png)
 
 3. Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
 
@@ -102,7 +102,7 @@ Elastic Search Setup can be achieved by following two ways.
 
 4. Check API in Postman
 
-![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
+  ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
 
 5. Check total number of the products in ReStful API.
 
