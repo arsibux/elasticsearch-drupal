@@ -22,6 +22,7 @@ We have two solutions to integrate search engin with drupal CMS
 
 In this moethod we can use drupal contrib modules to integrate elasticsearch with drupal cms/
 
+![anatomy](https://github.com/arsibux/elasticsearch-drupal/blob/main/_draw/anatomy.png)
 **DEPENDENCIES**
 
 - Elastissearch Service.
