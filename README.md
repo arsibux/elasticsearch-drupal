@@ -50,7 +50,7 @@ Elastic Search Setup can be achieved by following two ways.
 
   - [elastic.co](https://www.elastic.co/cloud/)
   - [AWS](https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
-  [For Connection contrib module](https://www.drupal.org/project/elasticsearch_aws_connector).
+    [For Connection contrib module](https://www.drupal.org/project/elasticsearch_aws_connector).
 
   Note:This project is not covered by Drupal’s security advisory policy.
   but **{ 353 }** sites report using this module sites report using this module.
@@ -58,33 +58,59 @@ Elastic Search Setup can be achieved by following two ways.
 **DRUPAL MODULES INSTALLATION AND CONFIGURATION**
 
 1. Search API enable and elasticearch_connector downlaod via composer and enabled.
-   ![modules](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es_enabled.png)
+
+![modules](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es_enabled.png)
+
 2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
+
    ![es](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/es.png)
+
 3. Configur search_api with elasticsearch.
+
    ![search_api](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/search_api.png)
+
 4. Creating index {idx_product} product in Search API.
+
    ![idx](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/idx.png)
+
 5. Configur datasource by selecting entity {PRODUCT} and its fields for elasticsearch server.
+
    ![fields](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/idx.png)
+
 6. Create View {Rest Export Page with path} and select index as content.
+
    ![views](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/steps/view.png)
 
 **TESTING**
 
 - Web Stack with Elasticsearch Server and Kibana up and running
+
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/stack.png)
+
 - Total products in drupal CMS DATABASE. **{ 489 }** with both status {published, not}
+
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/db.png)
+
 - Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
-  - Before ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/before.png)
-  - After ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/after.png)
+
+  - Before
+    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/before.png)
+
+  - After
+    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/after.png)
+
 - Check API in Postman
+
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
+
 - Check total number of the products in ReStful API.
+
   - without keyword
+
     ![total](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/total.png)
+
   - with keyword
+
     ![filtered](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/filtered.png)
 
 <hr>
