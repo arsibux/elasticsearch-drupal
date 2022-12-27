@@ -88,15 +88,15 @@ Elastic Search Setup can be achieved by following two ways.
 
 **TESTING**
 
-- Web Stack with Elasticsearch Server and Kibana up and running
+1. Web Stack with Elasticsearch Server and Kibana up and running
 
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/stack.png)
 
-- Total products in drupal CMS DATABASE. **{ 489 }** with both status {published, not}
+2. Total products in drupal CMS DATABASE. **{ 489 }** with both status {published, not}
 
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/db.png)
 
-- Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
+3. Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
 
   - Before
     ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/before.png)
@@ -104,11 +104,11 @@ Elastic Search Setup can be achieved by following two ways.
   - After
     ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/after.png)
 
-- Check API in Postman
+4. Check API in Postman
 
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
 
-- Check total number of the products in ReStful API.
+5. Check total number of the products in ReStful API.
 
   - without keyword
 
