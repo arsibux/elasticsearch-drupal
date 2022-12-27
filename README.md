@@ -2,16 +2,21 @@
 
 Elasticsearch integration with Drupal 8 CMS using core module SEARCH API and features contrib modules Elasticsearch Connector.
 
-**TasK** --SEARCH PERFORMANCE OPTIMIZATION --
+**TASK** --SEARCH PERFORMANCE OPTIMIZATION --
+
 Optimize search related ReSTful APIs using external search engin. Currently the system is using drupal internal database search and providing custom ReST API that fetching data from drupal linked database.
+
 **Challenge**: Integration of all search related drupal exposed ReSTful APIs with elasticsearch service.
 
 ### SYSTEM SPECIFICATIONS
 
-- DRUPAL:8.9.13 as BACKEDN CMS Exposing ReSTful APIs.
+- [DRUPAL: 8.9.13](https://www.drupal.org/project/drupal/releases/8.9.13) CMS as BACKEDN
+  - [Commerce: 8.x-2.15](https://www.drupal.org/project/commerce/releases/8.x-2.15)
+  - Webservices
 - DATABASE: Mariadb: 10.4
 - ANGULAR: FRONTEND Client.
-- SEARCH: Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
+
+**NOTE**:Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
 
 We have two solutions to integrate search engin with drupal CMS
 
@@ -24,11 +29,11 @@ In this method we can use drupal contrib modules to integrate elasticsearch with
 
 **DEPENDENCIES**
 
-- Elastissearch Service.
-- Elasticseacrch Connector Drupal contrib module.
-- Search API Drupal core module.
-- Views core module.
-- Webservices drupal core modules.
+- [Elastissearch Service](https://www.elastic.co/)
+- [Elasticseacrch Connector](https://www.drupal.org/project/elasticsearch_connector) Drupal Contrib Module.
+- [Search API](https://www.drupal.org/project/drupal/releases/8.9.13) Drupal Core Module.
+- [Views](https://www.drupal.org/project/drupal/releases/8.9.13) Core Module.
+- [Webservices](https://www.drupal.org/project/drupal/releases/8.9.13) Drupal Core Modules.
 
 ![anatomy](https://github.com/arsibux/elasticsearch-drupal/blob/main/_draw/anatomy.png)
 
@@ -38,7 +43,7 @@ Elastic Search Setup can be achieved by following two ways.
 
 - Setup Elasticsearch Server @VM
 
-  For connection b/w drupal and elasticsearch, drupal provides a contrib module [**elasticsearch_connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
+  For connection b/w drupal and elasticsearch, drupal provides a contrib module [**Elasticsearch Connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
 
   Note:This project is not covered by Drupal’s security advisory policy.
   but **{ 5,161 }** sites report using this module
@@ -115,9 +120,9 @@ Elastic Search Setup can be achieved by following two ways.
 
 <hr>
 
-<!-- ## SOLUTION # 2 { Custom Development }
+## SOLUTION # 2 { Drupal Custom Module Development }
 
-### NEW MODULE { zain_elasticsearch } -->
+<!-- ### NEW MODULE { zain_elasticsearch } -->
 
 ### KIBANA
 
