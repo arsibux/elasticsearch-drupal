@@ -10,20 +10,20 @@ Optimize search related ReSTful APIs using external search engin. Currently the 
 
 ### SYSTEM SPECIFICATIONS
 
-- [DRUPAL: 8.9.13](https://www.drupal.org/project/drupal/releases/8.9.13) CMS as BACKEDN
+- [DRUPAL: 8.9.13](https://www.drupal.org/project/drupal/releases/8.9.13) CMS as BACKEND
   - [Commerce: 8.x-2.15](https://www.drupal.org/project/commerce/releases/8.x-2.15)
   - Webservices
 - DATABASE: Mariadb: 10.4
 - ANGULAR: FRONTEND Client.
 
-**NOTE**:Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
+**NOTE**: Drupal is using Internal DATABASE SEARCH { Custom API for fetching data from database }
 
 We have two solutions to integrate search engin with drupal CMS
 
-- SOLUTION # 1 {Using core and contrib Drupal modules }
+- SOLUTION # 1 { Core and Contrib Drupal Modules }
 - SOLUTION # 2 { Drupal Custom Module Development }
 
-## SOLUTION # 1 {Using core and contrib Drupal modules }
+## SOLUTION # 1 { Using Core and Contrib Drupal Modules }
 
 In this method we can use drupal contrib modules to integrate elasticsearch with drupal cms/
 
