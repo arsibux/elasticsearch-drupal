@@ -81,9 +81,9 @@ but **353** sites report using this module sites report using this module.
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
 - Check total number of the products in ReStful API.
   - without keyword
-    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/total.png)
+    ![total](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/total.png)
   - with keyword
-    ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/filter.png)
+    ![filtered](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/filtered.png)
 
 <hr>
 
