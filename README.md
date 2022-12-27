@@ -62,11 +62,11 @@ but **353** sites report using this module sites report using this module.
 5. Configur datasource by selecting entity {PRODUCT} and its fields for elasticsearch server.
 6. Create View {Rest Export Page with path} and select index as content.
 
+<hr>
 
-## SOLUTION # 2 { Custom Development }
--
+## <!-- ## SOLUTION # 2 { Custom Development }
 
-### NEW MODULE { zain_elasticsearch }
+### NEW MODULE { zain_elasticsearch } -->
 
 ### KIBANA
 
