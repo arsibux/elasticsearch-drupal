@@ -20,9 +20,8 @@ We have two solutions to integrate search engin with drupal CMS
 
 ## SOLUTION # 1 {Using core and contrib Drupal modules }
 
-In this moethod we can use drupal contrib modules to integrate elasticsearch with drupal cms/
+In this method we can use drupal contrib modules to integrate elasticsearch with drupal cms/
 
-![anatomy](https://github.com/arsibux/elasticsearch-drupal/blob/main/_draw/anatomy.png)
 **DEPENDENCIES**
 
 - Elastissearch Service.
@@ -30,6 +29,8 @@ In this moethod we can use drupal contrib modules to integrate elasticsearch wit
 - Search API Drupal core module.
 - Views core module.
 - Webservices drupal core modules.
+
+![anatomy](https://github.com/arsibux/elasticsearch-drupal/blob/main/_draw/anatomy.png)
 
 **ES INTEGRATION WITH D8 CMS**
 
