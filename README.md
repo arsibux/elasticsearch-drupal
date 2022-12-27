@@ -56,7 +56,7 @@ but **353** sites report using this module sites report using this module.
 **DRUPAL MODULES INSTALLATION AND CONFIGURATION**
 
 1. Search API enable and elasticearch_connector downlaod via composer and enabled.
-![modules]()
+![modules](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/es_enabled.png)
 2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
 3. Configur search_api with elasticsearch.
 4. Creating index {idx_product} product in Search API.
