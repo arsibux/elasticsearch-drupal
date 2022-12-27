@@ -45,15 +45,15 @@ Elasticsearch Setup can be achieved by following two ways.
 
 For connection b/w Drupal and Elasticsearch, Drupal provides a contrib module [**Elasticsearch Connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
 
-Note:This project is not covered by Drupal’s security advisory policy.
+Note: This project is not covered by **{ Drupal’s security advisory policy }**.
 but **{ 5,161 }** sites report using this module
 
-- Last **RELEASE**
+- Last **Release** 8.x-7.0-alpha3 two years ago.
+- Last **Commit** 13 Jan, 2022.
+- 24 **Merge Request** pending.
+- **LICENSE** GNU GENERAL PUBLIC LICENSE Version 2, June 1991.
 
-- [**SECURITY**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/SECURITY.md)
-
-- **LICENSE** GNU GENERAL PUBLIC LICENSE Version 2, June 1991
-
+Due { alpha release } it is not covered by **{ Drupal’s security advisory policy }** because Board consider only stable version release.
 
 **DRUPAL MODULES INSTALLATION AND CONFIGURATION**
 
