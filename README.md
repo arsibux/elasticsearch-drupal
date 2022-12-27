@@ -24,13 +24,13 @@ In this moethod we can use drupal contrib modules to integrate elasticsearch wit
 
 **DEPENDENCIES**
 
-- Elastissearch Service {}
-- Elasticseacrch Connector Drupal contrib module
+- Elastissearch Service.
+- Elasticseacrch Connector Drupal contrib module.
 - Search API Drupal core module.
 - Views core module.
 - Webservices drupal core modules.
 
-### ES INTEGRATION WITH D8 CMS
+**ES INTEGRATION WITH D8 CMS**
 
 Elastic Search Setup can be achieved by following two ways.
 
@@ -55,16 +55,26 @@ but **353** sites report using this module sites report using this module.
 
 **DRUPAL MODULES INSTALLATION AND CONFIGURATION**
 
-1. Search API enable and elasticearch_connector downlaod via composer and enabled
+1. Search API enable and elasticearch_connector downlaod via composer and enabled.
+![modules]()
 2. Establish connection between DRUPAL CMS and ELASTICSEARCH by using UI fo elasticsearch_connector.
 3. Configur search_api with elasticsearch.
 4. Creating index {idx_product} product in Search API.
 5. Configur datasource by selecting entity {PRODUCT} and its fields for elasticsearch server.
 6. Create View {Rest Export Page with path} and select index as content.
 
+**TESTING**
+
+- Web Stack with Elasticsearch Server and Kibana up and running
+- Total products in drupal CMS DATABASE. **{ 489 }** with both status {published, not}
+- Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
+- Check total number of the products in ReStful API.
+  - without keyword
+  - with keyword
+
 <hr>
 
-## <!-- ## SOLUTION # 2 { Custom Development }
+<!-- ## SOLUTION # 2 { Custom Development }
 
 ### NEW MODULE { zain_elasticsearch } -->
 
