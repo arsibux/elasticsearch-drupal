@@ -27,22 +27,6 @@ GET /elasticsearch_index_db_idx_product/\_search
 
 ```
 
-- Fulltext
-  Fulltext in one field not all fields
-
-```
-GET elasticsearch_index_db_idx_product/_search
-{
-  "query": {
-    "match": {
-      "title": {
-        "query": "Sim"
-      }
-    }
-  }
-}
-```
-
 - Setting for search as you type
 
 ```
@@ -115,3 +99,4 @@ GET /elasticsearch_index_db_idx_product/_search
 ```
 
 - Semantic
+- Fulltext

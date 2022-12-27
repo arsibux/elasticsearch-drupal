@@ -8,5 +8,5 @@
 
 * Security
   https://www.drupal.org/project/security_review
-* Liencence
-*
+* Lincence
+
