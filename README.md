@@ -36,21 +36,21 @@ In this method we can use drupal contrib modules to integrate elasticsearch with
 
 Elastic Search Setup can be achieved by following two ways.
 
-1. Setup Elasticsearch Server @VM
+- Setup Elasticsearch Server @VM
 
 For connection b/w drupal and elasticsearch, drupal provides a contrib module [**elasticsearch_connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
 
 Note:This project is not covered by Drupal’s security advisory policy.
 but **5,161** sites report using this module
 
-- [**SECURITY**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/SECURITY.md)
-- [**LIENCENE**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/LICENSE.md)
+-- [**SECURITY**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/SECURITY.md)
+-- [**LIENCENE**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/LICENSE.md)
 
-2. Cloud based Service
+- Cloud based Service
 
-- [elastic.co](https://www.elastic.co/cloud/)
-- [AWS](https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
-  [For Connection contrib module](https://www.drupal.org/project/elasticsearch_aws_connector).
+-- [elastic.co](https://www.elastic.co/cloud/)
+-- [AWS](https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
+[For Connection contrib module](https://www.drupal.org/project/elasticsearch_aws_connector).
 
 Note:This project is not covered by Drupal’s security advisory policy.
 but **353** sites report using this module sites report using this module.
