@@ -77,7 +77,7 @@ but **353** sites report using this module sites report using this module.
 - Total products in elasticsearch **{ after and before }** indexing using [**kibana**](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/KIBANA.md).
   - Before ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/before.png)
   - After ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/after.png)
-- Check APS in Postman
+- Check API in Postman
   ![stack](https://github.com/arsibux/elasticsearch-drupal/blob/main/images/testing/postman.png)
 - Check total number of the products in ReStful API.
   - without keyword
