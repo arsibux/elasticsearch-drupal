@@ -4,13 +4,13 @@ Integration of ES with Zain Eshop { Drupal 8 CMS }
 
 WORK PROGRESS 19-DEC-2022 - 28-DEC-2022
 
-**TESING**
+**STEPS**
 
 - [V] Web Development Stack is up and running.
-- [] Modules {Elasticsearch Connector and Search API} are enabled.
-- [] Connection b/w ES and D8 CMS is established.
-- [] Drupal exposed API { ReST API for Fulltext seach }
-- [] API Testing Postman { https://zaineshop.ddev.site/products/v1/_search?text=sim }
+- [V] Modules {Elasticsearch Connector and Search API} are enabled.
+- [V] Connection b/w ES and D8 CMS is established.
+- [V] Drupal exposed API { ReST API for Fulltext seach }
+- [V] API Testing Postman { https://zaineshop.ddev.site/products/v1/_search?text=sim }
 
 **FULLTEXT SEARCH**
 Searching keyword{ text } in all text type fields of the entity{ product }.
