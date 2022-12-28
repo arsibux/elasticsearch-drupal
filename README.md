@@ -28,7 +28,7 @@ Drupal contrib modules to integrate Elasticsearch with Drupal CMS.
   - [Free and Open](https://www.elastic.co/about/free-and-open)
 
 - [Elasticseacrch Connector](https://www.drupal.org/project/elasticsearch_connector) Drupal Contrib Module.
-- [Search API](https://www.drupal.org/project/drupal/releases/8.9.13) Drupal Core Module.
+- [Search API](https://www.drupal.org/project/search_api) Drupal Core Module.
 - [Views](https://www.drupal.org/project/drupal/releases/8.9.13) Core Module.
 - [Webservices](https://www.drupal.org/project/drupal/releases/8.9.13) Drupal Core Modules.
 
@@ -45,9 +45,7 @@ Elasticsearch Setup can be achieved by following two ways.
 
 For connection b/w Drupal and Elasticsearch, Drupal provides a contrib module [**Elasticsearch Connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
 
-Note: This project is not covered by **{ Drupal’s security advisory policy }**.
-but **{ 5,161 }** sites report using this module
-
+- **{ 5,161 }** sites report using this module
 - Last **Release** 8.x-7.0-alpha3 two years ago.
 - Last **Commit** 13 Jan, 2022.
 - 24 **Merge Request** pending.
@@ -127,7 +125,7 @@ Due { alpha release } it is not covered by **{ Drupal’s security advisory poli
 
 ### WORK LOGS
 
-- [ADDED: 19-DEC-2022 - 26-DEC-2022](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/26_DEC_TO_02_JAN.md)
+- [ADDED: 19-DEC-2022 - 26-DEC-2022](https://github.com/arsibux/elasticsearch-drupal/blob/main/_progress/19_DEC_TO_26_DEC.md.md)
 - [ADDED: 26-DEC-2022 - 02-JAN-2023]
 
 ### REFERENCES
