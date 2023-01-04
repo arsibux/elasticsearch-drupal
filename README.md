@@ -44,7 +44,7 @@ Elasticsearch Setup can be achieved by following two ways.
   - [AWS](https://aws.amazon.com/marketplace/pp/prodview-voru33wi6xs7k)
 
 For connection b/w Drupal and Elasticsearch, Drupal provides a contrib module [**Elasticsearch Connector**](https://www.drupal.org/project/elasticsearch_connector) responsible to establish connection.
-
+ddev stop --unlist zaineshop
 - **{ 5,161 }** sites report using this module
 - Last **Release** 8.x-7.0-alpha3 two years ago.
 - Last **Commit** 13 Jan, 2022.
